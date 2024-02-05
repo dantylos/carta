@@ -4,8 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://resources/demos/style.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/owl.theme.default.css">
+  <link rel="stylesheet" href="css/slide-menu.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="css/header.css">
@@ -15,35 +19,168 @@
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
 </head>
 <body>
+
+  <div id="dialog" title="Basic dialog">
+    <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.</p>
+  </div>
+
   <header>
 
     <div class="container flex">
       
-      <a href="index.html">  
-        <img src="images/logo.svg" alt="Logo">
+       <a href="index.html">  
+        <img class="logo" src="images/logo.svg" alt="Logo">
       </a>  
       
-      <nav>
+      <nav id="primary_nav_wrap">
         <ul class="flex ls-none">
-          <li><a href="#">STORE</a></li>
-          <li><a href="#">COUNTRIES</a></li>
+          <li><a id="opener" href="#">STORE</a>
+            <ul>
+              <li><a href="#">Sub Menu 1</a></li>
+              <li><a href="#">Sub Menu 2</a></li>
+              <li><a href="#">Sub Menu 3</a></li>
+              <li><a href="#">Sub Menu 4</a>
+                <ul>
+                  <li><a href="#">Deep Menu 1</a>
+                    <ul>
+                      <li><a href="#">Sub Deep 1</a></li>
+                      <li><a href="#">Sub Deep 2</a></li>
+                      <li><a href="#">Sub Deep 3</a></li>
+                        <li><a href="#">Sub Deep 4</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Deep Menu 2</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Sub Menu 5</a></li>
+            </ul>
+          </li>
+          <li><a href="#">COUNTRIES</a>
+            <ul>
+              <li><a href="#">Sub Menu 1</a></li>
+              <li><a href="#">Sub Menu 2</a></li>
+              <li><a href="#">Sub Menu 3</a></li>
+            </ul>
+          </li>
           <li><a href="#">BOXES</a></li>
-          <li><a href="#">CASES</a></li>
+          <li><a href="#">CASES</a>
+            <ul>
+              <li class="dir"><a href="#">Sub Menu 1</a></li>
+              <li class="dir"><a href="#">Sub Menu 2 THIS IS SO LONG IT MIGHT CAUSE AN ISSEUE BUT MAYBE NOT?</a>
+                <ul>
+                  <li><a href="#">Category 1</a></li>
+                  <li><a href="#">Category 2</a></li>
+                  <li><a href="#">Category 3</a></li>
+                  <li><a href="#">Category 4</a></li>
+                  <li><a href="#">Category 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Sub Menu 3</a></li>
+              <li><a href="#">Sub Menu 4</a></li>
+              <li><a href="#">Sub Menu 5</a></li>
+            </ul>
+          </li>
           <li><a href="#">CHAMPIONSHIP</a></li>
           <li><a href="#">COACHES</a></li>
         </ul>
-      </nav>
-      
-      <ul class="ls-none flex">
-        <li><a href="#"><img src="images/search.svg" alt="search"></a></li>
-        <li><a href="#"><img src="images/user.svg" alt="user"></a></li>
-      </ul>
-      
+      </nav> 
+     
     </div>
 
   </header>
 
   <main>
+    <section class="main-wrap">
+
+      <div class="container flex">
+
+        <div class="main-image">
+          <img src="images/forest4.jpg" alt="visit">
+        </div>
+
+        <div class="main-banner">
+          <h1>Lorem ipsum dolor sit amet</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laborum ex autem adipisci. Necessitatibus doloribus accusantium corrupti autem nisi, corporis magni</p>
+          <a href="#">Explore our world</a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="web">
+      <div class="container">
+
+        <div>
+          <h2>Out variants</h2>
+        </div>
+
+        <div class="owl-carousel">
+          <div> <img src="images/forest2.jpg" alt="1"> </div>
+          <div> <img src="images/forest2.jpg" alt="2"> </div>
+          <div> <img src="images/forest2.jpg" alt="3"></div>
+          <div> <img src="images/forest2.jpg" alt="4"></div>
+          <div> <img src="images/forest2.jpg" alt="5"></div>
+          <div> <img src="images/forest2.jpg" alt="6"></div>
+          <div> <img src="images/forest2.jpg" alt="4"></div>
+          <div> <img src="images/forest2.jpg" alt="5"></div>
+          <div> <img src="images/forest2.jpg" alt="6"></div>
+        </div>  
+
+      </div>
+    </section>
+    <section class="info-block">
+      <div class="container">
+        <div id="accordion">
+          <h3>Types</h3>
+          <div>
+            <p>
+            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+            </p>
+          </div>
+          <h3>Sizes</h3>
+          <div>
+            <p>
+            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+            suscipit faucibus urna.
+            </p>
+          </div>
+          <h3>Regions</h3>
+          <div>
+            <p>
+            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+            Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+            ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+            lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+            </p>
+            <ul>
+              <li>List item one</li>
+              <li>List item two</li>
+              <li>List item three</li>
+            </ul>
+          </div>
+          <h3>Comfort</h3>
+          <div>
+            <p>
+            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+            mauris vel est.
+            </p>
+            <p>
+            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
@@ -51,15 +188,9 @@
 
   </footer>
 
-  <!--Code for carousel-->
-  <!-- <div class="owl-carousel">
-    <div> Your Content </div>
-    <div> Your Content </div>
-    <div> Your Content </div>
-    <div> Your Content </div>
-    <div> Your Content </div>
-  </div>  -->
-
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://kit.fontawesome.com/587afb5443.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   <script src="js/owl.carousel.js"></script>
   <script src="js/script.js"></script>
