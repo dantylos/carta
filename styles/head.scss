@@ -1,0 +1,50 @@
+header{
+  padding: 16px 0;
+  background: #FFFFFF;
+  .container{
+    align-items: center;
+    justify-content: space-between;
+    .menu-left{
+      align-items: center;
+    }
+    .request{
+      border: 1px solid black;
+      background: #000000;
+      border-radius: 24px;
+      padding: 8px 16px;
+      color: #FFFFFF;
+      margin-left: 20px;
+    }
+    .sign{
+      align-items: center;
+    }
+    nav ul span::after{
+        width: 0;
+        border-bottom: none;
+        content: url(../images/Frame.svg);
+        display: inline-block;
+        position: relative;
+        right: -8px;
+        top: -1px;
+    }
+  }
+  ul{
+    #pricing{
+      margin-left: 74px;
+    }
+    a{
+      font-family: 'Work Sans';
+      font-weight: 300;
+      color: #000000;
+      margin-left: 48px;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.head_logo{
+  max-width: 100px;
+  img{
+    width: 100%;
+  }
+}

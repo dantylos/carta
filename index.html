@@ -3,197 +3,392 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="https://resources/demos/style.css">
-  <link rel="stylesheet" href="css/owl.carousel.css">
-  <link rel="stylesheet" href="css/owl.theme.default.css">
-  <link rel="stylesheet" href="css/slide-menu.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
-  <link rel="stylesheet" href="css/header.css">
+  <title>Carta</title>
   <link rel="shortcut icon" href="images/icons8-done.svg" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/media.css">
+  <link rel="stylesheet" href="styles/dropdown-menu.css">
+  <link rel="stylesheet" href="styles/burger.css">
 </head>
 <body>
 
-  <div id="dialog" title="Basic dialog">
-    <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.</p>
-  </div>
 
   <header>
-
     <div class="container flex">
-      
-       <a href="index.html">  
-        <img class="logo" src="images/logo.svg" alt="Logo">
-      </a>  
-      
-      <nav id="primary_nav_wrap">
-        <ul class="flex ls-none">
-          <li><a id="opener" href="#">STORE</a>
-            <ul>
-              <li><a href="#">Sub Menu 1</a></li>
-              <li><a href="#">Sub Menu 2</a></li>
-              <li><a href="#">Sub Menu 3</a></li>
-              <li><a href="#">Sub Menu 4</a>
-                <ul>
-                  <li><a href="#">Deep Menu 1</a>
-                    <ul>
-                      <li><a href="#">Sub Deep 1</a></li>
-                      <li><a href="#">Sub Deep 2</a></li>
-                      <li><a href="#">Sub Deep 3</a></li>
-                        <li><a href="#">Sub Deep 4</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Deep Menu 2</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Sub Menu 5</a></li>
-            </ul>
-          </li>
-          <li><a href="#">COUNTRIES</a>
-            <ul>
-              <li><a href="#">Sub Menu 1</a></li>
-              <li><a href="#">Sub Menu 2</a></li>
-              <li><a href="#">Sub Menu 3</a></li>
-            </ul>
-          </li>
-          <li><a href="#">BOXES</a></li>
-          <li><a href="#">CASES</a>
-            <ul>
-              <li class="dir"><a href="#">Sub Menu 1</a></li>
-              <li class="dir"><a href="#">Sub Menu 2 THIS IS SO LONG IT MIGHT CAUSE AN ISSEUE BUT MAYBE NOT?</a>
-                <ul>
-                  <li><a href="#">Category 1</a></li>
-                  <li><a href="#">Category 2</a></li>
-                  <li><a href="#">Category 3</a></li>
-                  <li><a href="#">Category 4</a></li>
-                  <li><a href="#">Category 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Sub Menu 3</a></li>
-              <li><a href="#">Sub Menu 4</a></li>
-              <li><a href="#">Sub Menu 5</a></li>
-            </ul>
-          </li>
-          <li><a href="#">CHAMPIONSHIP</a></li>
-          <li><a href="#">COACHES</a></li>
-        </ul>
-      </nav> 
-     
-    </div>
 
+      <nav role="navigation">
+        <div class="menuToggle">
+
+          <input type="checkbox" />
+          
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <ul id="menu">
+            <a href="#"><li>Sign in</li></a>
+            <a href="#"><li>Request a demo</li></a>
+            <a href="#"><li>Products</li></a>
+            <a href="#"><li>Use cases</li></a>
+            <a href="#"><li>Pricing</li></a>
+            <a href="#"><li>Resources</li></a>
+            <a href="#"><li>Company</li></a>
+          </ul>
+
+        </div>
+      </nav>
+
+      <div class="head_logo"> 
+        <a href="index.html"><img src="images/CART-logo.png" alt="Logo"></a>
+      </div>
+
+
+      <div class="menu-left flex">
+
+        <nav  role="navigation" class="primary-navigation">
+          <ul class="flex ls_none">
+            <li><a href="#"><span>Products</span></a>
+              <ul class="dropdown">
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Illustration</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><span>Use Cases</span></a>
+              <ul class="dropdown">
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Web Design</a></li>
+              </ul>
+            </li>
+            <li><a id="pricing" href="#">Pricing</a></li>
+            <li><a href="#"><span>Resources</span></a>
+              <ul class="dropdown">
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Web Design</a></li>
+              </ul>            
+            </li>
+            <li><a href="#">Company</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <ul class="sign flex ls_none">
+        <li><a href="#">Sign in</a></li>
+        <li><a class="request" href="#">Request a demo</a></li>
+      </ul> 
+
+    </div>
   </header>
 
   <main>
-    <section class="main-wrap">
+    <section class="main-wrapper">
+      <div class="container">
 
-      <div class="container flex">
+        <div class="img1"><img src="images/main-banner/teacher.png" alt=""></div>
+        <div class="img2"><img src="images/main-banner/crime.png" alt=""></div>
+        <div class="img3"><img src="images/main-banner/jail.png" alt=""></div>
+        <div class="img4"><img src="images/main-banner/rescuer.png" alt=""></div>
 
-        <div class="main-image">
-          <img src="images/forest4.jpg" alt="visit">
+        <div class="main-info">
+          <h1>Infrastructure for innovators</h1>
+          <p>Carta’s platform of software and services lays the groundwork so you can focus on building the future.</p>
+          <div class="main-links">
+            <a class="request" href="#">Request a demo</a>
+            <a id="tour" href="#">Take a video tour</a>
+          </div>
         </div>
 
-        <div class="main-banner">
-          <h1>Lorem ipsum dolor sit amet</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laborum ex autem adipisci. Necessitatibus doloribus accusantium corrupti autem nisi, corporis magni</p>
-          <a href="#">Explore our world</a>
+    </div>
+  </section>
+
+  <section class="equity">
+    <div class="container flex">
+      <div class="generation">
+        <h2>A generation of ownership built in Carta</h2>
+        <p id="owners">2,201,980</p>
+        <p id="own-text">Equity owners</p>
+      </div>
+      <div class="generation-digits flex">
+        <div class="component">
+          <p class="big-digit">$2.5T</p>
+          <p class="info">Assets on platform</p>
+        </div>
+        <div class="component">
+          <p class="digit">30,000</p>
+          <p class="info">Companies</p>
+        </div>
+        <div class="component">
+          <p class="big-digit">$100B</p>
+          <p class="info">Assets under administration</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="partners">
+    <div class="container flex">
+      <div class="partner-img"><img src="images/partners/canva.png" alt="partner"></div>
+      <div class="partner-img"><img src="images/partners/tribe.png" alt="partner"></div>
+      <div class="partner-img"><img src="images/partners/better.png" alt="partner"></div>
+      <div class="partner-img"><img src="images/partners/calendly.png" alt="partner"></div>
+      <div class="partner-img"><img src="images/partners/qed.png" alt="partner"></div>
+      <div class="partner-img"><img src="images/partners/pipe.png" alt="partner"></div>
+    </div>
+  </section>
+
+  <section class="support">
+    <div class="container flex">
+
+      <h3>Support to drive your business forward</h3>
+
+      <div class="items">
+        <ul class="flex ls_none">
+          <li><a href="#">Equity Management</a></li>
+          <li><a href="#">Compensation</a></li>
+          <li><a href="#">Venture Capital</a></li>
+          <li><a href="#">Liquidity</a></li>
+        </ul>
+      </div>
+
+      <div class="managment flex">
+        <div class="manag-info">
+          <h5>Equity Management</h5>
+          <p>Manage all things equity in one place, including cap tables, valuations, fundraising, issuing shares, expense accounting, and equity planning.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="manag-img">
+          <img src="images/support.png" alt="image">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="builders">
+    <div class="container flex">
+      <div class="builders-info">
+        <h3>Built for the builders</h3>
+        <p>From idea to IPO, Carta supports innovators at every stage and in every role.</p>
+      </div>
+
+      <div class="builders-media">
+
+        <div class="build-mediablock flex">
+          <div class="build-img">
+            <img src="images/builders-media/india.png" alt="img">
+          </div>
+          <div class="build-info">
+            <h6>Founders</h6>
+            <p>Over 30,000 companies use Carta to fundraise, issue equity, and stay compliant.</p>
+          </div>
+          <a href="#">Learn more</a>
+        </div>
+
+        <div class="build-mediablock flex">
+          <div class="build-img">
+            <img src="images/builders-media/kitchen.png" alt="img">
+          </div>
+          <div  class="build-info">
+            <h6>HR</h6>
+            <p>From extending offers to answering employee equity questions, find the tools and team to support you.</p>
+          </div>
+          <div>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+
+        <div class="build-mediablock flex">
+          <div class="build-img">
+            <img src="images/builders-media/glasses.png" alt="img">
+          </div>
+          <div  class="build-info">
+            <h6>Law Firms</h6>
+            <p>Help your clients issue equity, raise funds, and stay compliant, all in one place.</p>
+          </div>
+          <div>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+
+        <div class="build-mediablock flex">
+          <div class="build-img">
+            <img src="images/builders-media/black-india.png" alt="img">
+          </div>
+          <div  class="build-info">
+            <h6>Investors</h6>
+            <p>Manage your fund on Carta so you can spend more time on deals and less time dealing with your back office.</p>
+          </div>
+          <div>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+
+        <div class="build-mediablock flex">
+          <div class="build-img">
+            <img src="images/builders-media/india-kitchen.png" alt="img">
+          </div>
+          <div  class="build-info">
+            <h6>Finance</h6>
+            <p>Grow and plan for the future with tools and services that help you with everything from receiving fast valuations to managing burn to running liquidity events.</p>
+          </div>
+          <div>
+            <a href="#">Learn more</a>
+          </div>
         </div>
 
       </div>
 
-    </section>
+    </div>
+  </section>
 
-    <section class="web">
-      <div class="container">
+  <section class="future" >
+    <div class="container">
 
+      <h6>Focused on the future</h6>
+      <p>Innovation starts from within, so we’re always evolving our suite of products to keep you moving forward.</p>
+
+      <div class="compensation flex">
+        <div class="comp-info">
+          <h5>Carta Total Compensation</h5>
+          <p>Make responsible compensation decisions, stay on budget, and communicate the true value of your compensation packages with Carta Total Comp.</p>
+        </div>
         <div>
-          <h2>Out variants</h2>
-        </div>
-
-        <div class="owl-carousel">
-          <div> <img src="images/forest2.jpg" alt="1"> </div>
-          <div> <img src="images/forest2.jpg" alt="2"> </div>
-          <div> <img src="images/forest2.jpg" alt="3"></div>
-          <div> <img src="images/forest2.jpg" alt="4"></div>
-          <div> <img src="images/forest2.jpg" alt="5"></div>
-          <div> <img src="images/forest2.jpg" alt="6"></div>
-          <div> <img src="images/forest2.jpg" alt="4"></div>
-          <div> <img src="images/forest2.jpg" alt="5"></div>
-          <div> <img src="images/forest2.jpg" alt="6"></div>
-        </div>  
-
-      </div>
-    </section>
-    <section class="info-block">
-      <div class="container">
-        <div id="accordion">
-          <h3>Types</h3>
-          <div>
-            <p>
-            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-            </p>
-          </div>
-          <h3>Sizes</h3>
-          <div>
-            <p>
-            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-            suscipit faucibus urna.
-            </p>
-          </div>
-          <h3>Regions</h3>
-          <div>
-            <p>
-            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-            Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-            ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-            lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-            </p>
-            <ul>
-              <li>List item one</li>
-              <li>List item two</li>
-              <li>List item three</li>
-            </ul>
-          </div>
-          <h3>Comfort</h3>
-          <div>
-            <p>
-            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-            mauris vel est.
-            </p>
-            <p>
-            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos.
-            </p>
-          </div>
+          <img src="images/compensation.png" alt="img">
         </div>
       </div>
-    </section>
+
+    </div>
+  </section>
+
+  <section class="ceo">
+    <div class="container flex">
+      <p>As we plan for growth, I’m thrilled to have a partner like Carta that really scales with my startup and its needs.</p>
+      <div class=ceo-img block"><img src="images/ceo-kitchen.png" alt="img"></div>
+      <p id="ceo-name">Amber Allen</p>
+      <p>Founder & CEO, Double A Labs</p>
+      <a href="#">Read case study</a>
+    </div>
+  </section>
+
+  <section class="tour">
+    <div class="container">
+      <h3>We can’t wait to see what you build</h3>
+      <div class="tour-links flex">
+        <a href="#">Request a demo</a>
+        <a href="#">Take a video tour</a>
+      </div>
+    </div>
+  </section>
 
   </main>
 
   <footer>
+    <div class="container flex">
+      <div>
+        <ul class="ls_none">
+          <li>ADDITIONAL PRODUCTS</li>
+          <li><a href="#">Carta for HCLS</a></li>
+          <li><a href="#">SAFEs</a></li>
+          <li><a href="#">Scenario Modeling</a></li>
+          <li><a href="#">Portfolio Insights</a></li>
+          <li><a href="#">Carta for International</a></li>
+          <li><a href="#">ESPP</a></li>
+          <li><a href="#">Board Management</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="ls_none">
+          <li>FEATURED BLOGS</li>
+          <li><a href="#">What is a 409A valuation?</a></li>
+          <li><a href="#">What is a cap table?</a></li>
+          <li><a href="#">What is a SAFE?</a></li>
+          <li><a href="#">What is vesting?</a></li>
+          <li><a href="#">What are stock options?</a></li>
+          <li><a href="#">Pre-money vs post-money SAFEs</a></li>
+          <li><a href="#">How are stock options taxed?</a></li>
+          <li><a href="#">Exercising stock options</a></li>
+          <li><a href="#">Internal rate of return (IRR) calculator</a></li>
+          <li><a href="#">Read more</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="ls_none">
+          <li>PARTNERS</li>
+          <li><a href="#">Why partner?</a></li>
+          <li><a href="#">Become a Partner</a></li>
+          <li><a href="#">Law Firms</a></li>
+          <li><a href="#">Venture Capital</a></li>
+          <li><a href="#">Private Equity</a></li>
+          <li><a href="#">Accelerators</a></li>
+          <li><a href="#">Partner Resources</a></li>
+          <li><a href="#">Startup Stack</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="ls_none">
+          <li>COMPANY</li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Executive team</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Support Documentation</a></li>
+          <li><a href="#">Product Release Notes</a></li>
+        </ul>
 
+        <ul class="ls_none">
+          <li>LEGAL</li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Legal Disclosure</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">E-sign Consent</a></li>
+          <li><a href="#">GDPR Compliance</a></li>
+          <li><a href="#">FINRA BrokerCheck - Carta Securities, LLC</a></li>
+          <li><a href="#">FINRA BrokerCheck - Carta Capital Markets, LLC</a></li>
+          <li><a href="#">Supplier Terms</a></li>
+        </ul>
+
+        <ul class="ls_none">
+          <li>SECURITY</li>
+          <li><a href="#">Responsible Disclosure Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-media flex">
+        <div class="left-media flex">
+          <div id="sipc">
+            <img src="images/footer/sipc.png" alt="img">
+          </div>
+          <div id="aicpa">
+            <img src="images/footer/aicpa.png" alt="img">
+          </div>
+        </div>
+        <div class="right-media flex">
+          <div><img src="images/footer/appstore.png" alt="img"></div>
+          <div><img id="googleplay" src="images/footer/googleplay.png" alt="img"></div>
+          <div><img id="in" src="images/footer/in.svg" alt="img"></div>
+          <div><img src="images/footer/inst.svg" alt="img"></div>
+          <div><img src="images/footer/twit.svg" alt="img"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="final-info container flex">
+      <div class="final">
+        <p>eShares, Inc. DBA Carta, Inc. (“Carta”) is registered with the U.S. Securities and Exchange Commission as a transfer agent. The services and information described in this communication are provided to you “as is” and “as available” without warranties of any kind, expressed, implied or otherwise, including but not limited to all warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
+      </div>
+      <div class="final">
+        <p>Neither Carta nor any of its affiliates will be liable for any damages, including without limitation direct, indirect, special, punitive or consequential damages, caused in any way or arising from the use of the services or reliance upon the information provided in this communication or in connection with any failure of performance, error, omission, interruption, defect, delay in operation or transmission, computer virus or line or system failure. Carta offers certain brokerage services through its wholly owned broker-dealer subsidiaries, Carta Securities, LLC (Member: FINRA/SIPC) and Carta Capital Markets, LLC (Member: FINRA/SIPC). Contact: eShares, Inc. DBA Carta, Inc., 333 Bush Street, Floor 23, Ste. 2300, San Francisco, CA 94104.</p>
+        <p id="year">© 2022 eShares, Inc. DBA Carta, Inc.</p>
+      </div>
+    </div>
   </footer>
-
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-  <script src="https://kit.fontawesome.com/587afb5443.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-  <script src="js/owl.carousel.js"></script>
-  <script src="js/script.js"></script>
 
 </body>
 </html>
