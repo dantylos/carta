@@ -5,11 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carta</title>
   <link rel="shortcut icon" href="images/icons8-done.svg" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/media.css">
   <link rel="stylesheet" href="styles/dropdown-menu.css">
   <link rel="stylesheet" href="styles/burger.css">
@@ -87,23 +83,34 @@
 
   <main>
     <section class="main-wrapper">
-      <div class="container">
 
-        <div class="img1"><img src="images/main-banner/teacher.png" alt=""></div>
-        <div class="img2"><img src="images/main-banner/crime.png" alt=""></div>
-        <div class="img3"><img src="images/main-banner/jail.png" alt=""></div>
-        <div class="img4"><img src="images/main-banner/rescuer.png" alt=""></div>
-
-        <div class="main-info">
+    <div class="container flex">
+      <div>
+        <div>
+          <div class="img1"><img src="images/main-banner/teacher.png" alt=""></div>
+        </div>
+        <div>
+          <div class="img2"><img src="images/main-banner/crime.png" alt=""></div>
+        </div>
+      </div>
+      <div class="main-info">
           <h1>Infrastructure for innovators</h1>
           <p>Carta’s platform of software and services lays the groundwork so you can focus on building the future.</p>
-          <div class="main-links">
+          <div class="main-links flex">
             <a class="request" href="#">Request a demo</a>
             <a id="tour" href="#">Take a video tour</a>
           </div>
+      </div>
+      <div class="main-img-right">
+        <div>
+          <div class="img3"><img src="images/main-banner/jail.png" alt=""></div>
         </div>
-
+        <div>
+          <div class="img4"><img src="images/main-banner/rescuer.png" alt=""></div>
+        </div>
+      </div>
     </div>
+
   </section>
 
   <section class="equity">
@@ -159,7 +166,9 @@
         <div class="manag-info">
           <h5>Equity Management</h5>
           <p>Manage all things equity in one place, including cap tables, valuations, fundraising, issuing shares, expense accounting, and equity planning.</p>
-          <a href="#">Learn more</a>
+          <div class="manag-link flex">
+            <a href="#">Learn more</a>
+          </div>
         </div>
         <div class="manag-img">
           <img src="images/support.png" alt="image">
@@ -170,7 +179,7 @@
   </section>
 
   <section class="builders">
-    <div class="container flex">
+    <div class="container">
       <div class="builders-info">
         <h3>Built for the builders</h3>
         <p>From idea to IPO, Carta supports innovators at every stage and in every role.</p>
