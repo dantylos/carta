@@ -1,6 +1,8 @@
-@import url(footer.css);
+@import url(foot.css);
 @import url(header.css);
 @import url(media.css);
+@import url(dropdown-menu.css);
+@import url(burger.css);
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Roboto:wght@400;700&family=Work+Sans:wght@300;400;600&display=swap");
 * {
   margin: 0;
@@ -45,7 +47,7 @@
   border-radius: 24px;
   padding: 12px 18px;
   color: #FFFFFF;
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
 }
 
 #tour {
@@ -79,14 +81,14 @@
   max-width: 428px;
 }
 .main-wrapper .main-info h1 {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 50px;
   font-weight: 400;
   line-height: 55px;
   text-align: center;
 }
 .main-wrapper .main-info p {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
@@ -98,7 +100,7 @@
   margin-top: 32px;
 }
 .main-wrapper .main-info #tour {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 18px;
@@ -118,7 +120,7 @@
   max-width: 650px;
 }
 .equity .container .generation #owners {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 69px;
   font-weight: 400;
   line-height: 70px;
@@ -137,28 +139,28 @@
   text-align: center;
 }
 .equity .container .generation-digits .component .big-digit {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 39px;
   font-weight: 400;
   line-height: 46px;
   text-align: center;
 }
 .equity .container .generation-digits .component .digit {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 34px;
   font-weight: 400;
   line-height: 46px;
   text-align: center;
 }
 .equity .container .generation-digits .component .info {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 19px;
   font-weight: 400;
   line-height: 30px;
   text-align: center;
 }
 .equity h2 {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 50px;
   font-weight: 400;
   line-height: 59px;
@@ -166,7 +168,7 @@
   margin-bottom: 36px;
 }
 .equity #own-text {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -189,7 +191,7 @@
 }
 
 .support h3 {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 50px;
   font-weight: 400;
   line-height: 59px;
@@ -225,7 +227,7 @@
   margin-left: 0;
 }
 .support .items ul a {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 18px;
@@ -248,7 +250,7 @@
   width: 100%;
 }
 .support .managment h5 {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 27px;
   font-weight: 400;
   line-height: 36px;
@@ -257,7 +259,7 @@
   margin-bottom: 17px;
 }
 .support .managment p {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 19px;
   font-weight: 400;
   line-height: 29px;
@@ -266,7 +268,7 @@
   margin-bottom: 16px;
 }
 .support .managment a {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 18px;
@@ -292,14 +294,14 @@
   margin: auto;
 }
 .builders .container .builders-info h3 {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 50px;
   font-weight: 400;
   line-height: 59px;
   text-align: center;
 }
 .builders .container .builders-info p {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -315,11 +317,12 @@
   margin-bottom: 41px;
 }
 .builders .builders-media .build-mediablock a {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 18px;
   margin-left: 108px;
+  color: #000000;
 }
 .builders .builders-media .build-mediablock a::after {
   content: url(../images/Frame2.svg);
@@ -339,14 +342,14 @@
   margin-left: 24px;
 }
 .builders .builders-media .build-info h6 {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 27px;
   font-weight: 400;
   line-height: 36px;
   text-align: left;
 }
 .builders .builders-media .build-info p {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -357,7 +360,7 @@
   padding: 190px 0;
 }
 .future h6 {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 28px;
   font-weight: 400;
   line-height: 36px;
@@ -365,7 +368,7 @@
   margin-bottom: 36px;
 }
 .future p {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -384,7 +387,7 @@
   max-width: 345px;
 }
 .future .compensation h5 {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 27px;
   font-weight: 400;
   line-height: 36px;
@@ -392,7 +395,7 @@
   margin-bottom: 17px;
 }
 .future .compensation p {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 29px;
@@ -410,7 +413,7 @@
   margin-bottom: 7px;
 }
 .ceo .container p {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 28px;
   font-weight: 400;
   line-height: 38px;
@@ -426,12 +429,13 @@
   width: 100%;
 }
 .ceo .container a {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   text-align: center;
   margin-top: 14px;
+  color: #000;
 }
 
 .tour {
@@ -443,7 +447,7 @@
 }
 .tour .container h3 {
   max-width: 730px;
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 50px;
   font-weight: 400;
   line-height: 58px;
@@ -458,7 +462,7 @@
   margin: auto;
 }
 .tour .container .tour-links a {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 18px;

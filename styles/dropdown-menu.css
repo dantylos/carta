@@ -19,6 +19,7 @@ nav.primary-navigation ul li ul {
   left: 0;
   display: none;
   background: white;
+  padding: 20px 28px 12px 12px;
 }
 nav.primary-navigation ul li:hover > ul,
 nav.primary-navigation ul li ul:hover {

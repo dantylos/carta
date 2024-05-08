@@ -1,10 +1,12 @@
-@import url(footer.css);
+@import url(foot.css);
 @import url(header.css);
 @import url(media.css);
+@import url(dropdown-menu.css);
+@import url(burger.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Roboto:wght@400;700&family=Work+Sans:wght@300;400;600&display=swap');
 
-$font: 'Work Sans';
+$font: 'Work Sans', sans-serif;
 
 
 *{
@@ -322,6 +324,7 @@ $font: 'Work Sans';
         font-weight: 400;
         line-height: 18px;
         margin-left: 108px;
+        color: #000000;
         &::after{
           content: url(../images/Frame2.svg);
           position: relative;
@@ -438,6 +441,7 @@ $font: 'Work Sans';
       line-height: 18px;
       text-align: center;  
       margin-top: 14px; 
+      color: #000;
     }
   }
 }

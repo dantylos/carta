@@ -1,24 +1,25 @@
 header {
-  padding: 16px 0;
-  background: #FFFFFF;
+  padding: 12px 0;
 }
 header .container {
   align-items: center;
   justify-content: space-between;
 }
-header .container .menu-left {
-  align-items: center;
+header .container a {
+  font-family: "Work Sans";
 }
-header .container .request {
-  border: 1px solid black;
-  background: #000000;
-  border-radius: 24px;
-  padding: 8px 16px;
-  color: #FFFFFF;
-  margin-left: 20px;
+header .container .head_logo {
+  max-width: 100px;
 }
-header .container .sign {
-  align-items: center;
+header .container .head_logo img {
+  width: 100%;
+  display: block;
+}
+header .container .primary-navigation ul {
+  gap: 42px;
+}
+header .container .primary-navigation ul #pricing {
+  margin-left: 14px;
 }
 header .container nav ul span::after {
   width: 0;
@@ -26,25 +27,19 @@ header .container nav ul span::after {
   content: url(../images/Frame.svg);
   display: inline-block;
   position: relative;
-  right: -8px;
-  top: -1px;
+  left: 8px;
+  top: 1px;
 }
-header ul #pricing {
-  margin-left: 74px;
+header .container .sign {
+  align-items: center;
+  gap: 32px;
 }
-header ul a {
-  font-family: "Work Sans";
-  font-weight: 300;
-  color: #000000;
-  margin-left: 48px;
-  letter-spacing: 2px;
-}
-
-.head_logo {
-  max-width: 100px;
-}
-.head_logo img {
-  width: 100%;
+header .container .sign .request {
+  border: solid black;
+  background: #000000;
+  border-radius: 24px;
+  padding: 8px 16px;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=header.css.map */
